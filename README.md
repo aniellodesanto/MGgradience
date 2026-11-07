@@ -1,4 +1,4 @@
-Syntactic Gradience from an MG Parsers
+Syntactic Gradience with an MG Parser
 ===================================================
 
 
