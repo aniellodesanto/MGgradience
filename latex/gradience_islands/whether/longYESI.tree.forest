@@ -1,0 +1,65 @@
+[CP, name=CPmatrix
+	[C',
+		[do]
+		[TP, name=TPmatrix
+			[T',
+				[T1]
+				[$v$P,
+					[you, name=who]
+					[$v$',
+						[$v1$]
+						[VP,
+							[wonder]
+									[CP, name=CPembedded
+								[C'
+								[C2]
+								[TP, name=TPembedded
+									[T',
+										[T2]
+										[DisjP
+										[PosP
+										[whether, name=whether]
+										[PosP
+										[P]
+										[$v$P,
+											[John, name = subj]
+											[$v$',
+												[$v2$]
+												[VP,
+													[bought]
+													[what, name =what
+													]
+												]
+											]
+										]%
+										]
+										]
+										[NegP
+										[or]
+										[NegP
+										[not]
+										[$v$P,
+											[John, name = subj]
+											[$v$',
+												[$v3$]
+												[VP,
+													[bought2]
+													[what2
+													]
+												]
+											]
+										]%
+										]
+										]
+										]
+									]
+								]
+								]
+							]
+								]
+					]
+				]
+			]
+		]
+	]
+]

@@ -1,0 +1,42 @@
+python3 -i __init__.py
+
+# set up tree annotation for each condition (whether island example)
+
+mytree = tree_from_file('trees/gradience_islands/whether/longNOI')
+mytree.show_leaves()
+mytree = tree_from_file('trees/gradience_islands/whether/longNOI')
+ioprint(mytree, filename='trees/gradience_islands/whether/longNOI')
+texprint(mytree, filename='longNOI_annotated', tree_directory='./latex/')
+
+
+mytree = tree_from_file('trees/gradience_islands/whether/longYESI')
+mytree.show_leaves()
+mytree = tree_from_file('trees/gradience_islands/whether/longYESI')
+ioprint(mytree, filename='trees/gradience_islands/whether/longYESI')
+texprint(mytree, filename='longYESI_annotated', tree_directory='./latex/')
+
+
+mytree = tree_from_file('trees/gradience_islands/whether/shortNOI')
+mytree.show_leaves()
+mytree = tree_from_file('trees/gradience_islands/whether/shortNOI')
+ioprint(mytree, filename='trees/gradience_islands/whether/shortNOI')
+texprint(mytree, filename='shortNOI', tree_directory='./latex/')
+
+mytree = tree_from_file('trees/gradience_islands/whether/shortYESI')
+mytree.show_leaves()
+mytree = tree_from_file('trees/gradience_islands/whether/shortYESI')
+ioprint(mytree, filename='trees/gradience_islands/whether/shortYESI')
+texprint(mytree, filename='shortYESI', tree_directory='./latex/')
+
+# comparisons
+
+my_metrics = metrics_from_file(inputfile='./metrics/base')
+my_metrics = metrics_from_file(inputfile='./metrics/base', ranks=2)
+
+comp = comparisons_from_file('./comparisons/gradience_islands', directory='./trees/gradience_islands/whether', metrics=my_metrics)
+
+# Visualize results
+
+comp.show()
+comp.table()
+

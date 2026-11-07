@@ -1,0 +1,10 @@
+# General format:
+# name; LaTeX command; winner; loser
+#
+#
+1 ;  ; shortNOI; longNOI ; 
+2 ;  ; shortNOI ; shortYESI ; 
+3 ;  ; shortNOI ; longYESI ; 
+4 ;  ; shortYESI  ; longNOI ; 
+5 ;  ; shortYESI  ; longYESI ; 
+6 ;  ; longNOI ;longYESI ; 

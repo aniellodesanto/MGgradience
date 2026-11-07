@@ -1,0 +1,34 @@
+\documentclass{article}
+
+% load tikz and forest with more visible arrows
+\usepackage{tikz}
+\usepackage[linguistics]{forest}
+\usetikzlibrary{arrows.meta}
+
+% define move style
+\tikzset{move/.style = {-{Latex[length=.5em]},dashed,blue}}
+\tikzset{rightward/.style = {dotted}}
+\tikzset{annotation/.style = {font=\footnotesize}}
+\tikzset{index/.style = {annotation, anchor=south east}}
+\tikzset{outdex/.style = {annotation, anchor=north west}}
+\tikzset{boxed/.style = {draw}}
+\tikzset{empty/.style = {}}
+\tikzset{non-final/.style = {opacity=70}}
+
+\begin{document}
+
+   4) Short YES I
+\input{shortYESI_annotated.io.mgproc.forest}
+\newpage
+   1) Long NOI                 
+\input{longNOI_annotated.io.mgproc.forest}
+\newpage
+   2) Long YESI    
+\input{longYESI_annotated.io.mgproc.forest}    
+\newpage
+3) Short NOI
+\input{shortNOI_annotated.io.mgproc.forest}
+
+
+
+\end{document}
